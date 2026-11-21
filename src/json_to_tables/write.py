@@ -41,6 +41,20 @@ def column_type(types: set[str]) -> str:
 
 
 def schema_rows(tables: dict[str, Table], names: dict[str, str]) -> list[list[Any]]:
+    """One line per column: where it sits, its path in the JSON (`[]` marks a list), type, fill."""
+
+    def base(t: Table) -> str:
+        if t.parent is None:
+            return ""
+        up = base(tables[t.parent])
+        return f"{up}.{'.'.join(t.rel_path)}[]" if up else f"{'.'.join(t.rel_path)}[]"
+
+    def json_path(t: Table, path: tuple[str, ...]) -> str:
+        b = base(t)
+        if path == ("value",) and t.parent:
+            return b
+        return f"{b}.{'.'.join(path)}" if b else ".".join(path)
+
     rows: list[list[Any]] = []
     for t in tables.values():
         if t.parent:
@@ -48,7 +62,7 @@ def schema_rows(tables: dict[str, Table], names: dict[str, str]) -> list[list[An
                          "integer", len(t.rows)])
         for col, path in t.columns.items():
             nulls = sum(1 for r in t.rows if r.get(col) is None)
-            rows.append([names[t.name], t.name, col, ".".join((*t.rel_path, *path)),
+            rows.append([names[t.name], t.name, col, json_path(t, path),
                          column_type(t.types[col]), len(t.rows) - nulls])
     return rows
 

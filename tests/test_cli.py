@@ -30,7 +30,7 @@ def test_xlsx(tmp_path: Path, capsys: object) -> None:
     lines = list(wb["items.lines"].values)
     assert lines[3] == (3, 2, 1, "C", 1)
     schema = list(wb["Schema"].values)
-    assert ("items.lines", "items.lines", "price", "lines.price", "number", 2) in schema
+    assert ("items.lines", "items.lines", "price", "lines[].price", "number", 2) in schema
 
 
 def test_csv_and_sqlite(tmp_path: Path) -> None:

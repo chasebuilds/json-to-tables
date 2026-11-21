@@ -1,0 +1,867 @@
+{
+  "data": {
+    "items": [
+      {
+        "order_id": 1,
+        "created_at": "2026-02-14T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C2186",
+          "name": "Dromir Selethka",
+          "email": "dromir.selethka@example.com",
+          "address": {
+            "city": "Brilodro City",
+            "zip": "76387"
+          },
+          "phone": null
+        },
+        "items": [],
+        "total": 0,
+        "payments": [
+          {
+            "method": "card",
+            "ok": true
+          }
+        ],
+        "notes": "leave at door"
+      },
+      {
+        "order_id": 2,
+        "created_at": "2026-02-19T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C7499",
+          "name": "Etheth Corkacor",
+          "email": "etheth.corkacor@example.com",
+          "address": {
+            "city": "Katenka City",
+            "zip": "72963"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-653",
+            "qty": 1,
+            "price": 69.37
+          }
+        ],
+        "total": 69.37,
+        "gift": true
+      },
+      {
+        "order_id": 3,
+        "created_at": "2026-12-15T10:00:00Z",
+        "status": "shipped",
+        "customer": {
+          "id": "C9711",
+          "name": "Kacor Tenaneth",
+          "email": "kacor.tenaneth@example.com",
+          "address": {
+            "city": "Seldroan City",
+            "zip": "76750"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-913",
+            "qty": 2,
+            "price": 84.48,
+            "tags": [
+              "rush",
+              "bulk"
+            ]
+          }
+        ],
+        "total": 168.96,
+        "notes": null
+      },
+      {
+        "order_id": 4,
+        "created_at": "2026-07-12T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C2271",
+          "name": "Dromir Anselka",
+          "email": "dromir.anselka@example.com",
+          "address": {
+            "city": "Bricordro City",
+            "zip": "44580"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-916",
+            "qty": 4,
+            "price": 10.11,
+            "tags": [
+              "bulk",
+              "gift"
+            ],
+            "discounts": [
+              {
+                "code": "ETHCOR",
+                "amount": 8.94
+              },
+              {
+                "code": "ANVA",
+                "amount": 6.73
+              }
+            ]
+          },
+          {
+            "sku": "SKU-784",
+            "qty": 3,
+            "price": 4.66,
+            "discounts": [
+              {
+                "code": "ANKA",
+                "amount": 2.75
+              }
+            ]
+          },
+          {
+            "sku": "SKU-394",
+            "qty": 2,
+            "price": 89.13,
+            "tags": [
+              "gift",
+              "fragile",
+              "bulk"
+            ]
+          },
+          {
+            "sku": "SKU-384",
+            "qty": 2,
+            "price": 98.68
+          }
+        ],
+        "total": 430.04
+      },
+      {
+        "order_id": 5,
+        "created_at": "2026-06-20T10:00:00Z",
+        "status": "paid",
+        "customer": {
+          "id": "C3987",
+          "name": "Teneth Tenkaan",
+          "email": "teneth.tenkaan@example.com",
+          "address": {
+            "city": "Vavaka City",
+            "zip": "19094"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-426",
+            "qty": 2,
+            "price": 83.48
+          },
+          {
+            "sku": "SKU-792",
+            "qty": 1,
+            "price": 55.88
+          },
+          {
+            "sku": "SKU-796",
+            "qty": 4,
+            "price": 48.97,
+            "tags": [
+              "bulk",
+              "gift",
+              "rush"
+            ],
+            "discounts": [
+              {
+                "code": "ANMIR",
+                "amount": 1.88
+              }
+            ]
+          },
+          {
+            "sku": "SKU-715",
+            "qty": 1,
+            "price": 14.08
+          }
+        ],
+        "total": 432.8,
+        "payments": [
+          {
+            "method": "card",
+            "ok": true
+          }
+        ],
+        "notes": "=call first"
+      },
+      {
+        "order_id": 6,
+        "created_at": "2026-09-18T10:00:00Z",
+        "status": "shipped",
+        "customer": {
+          "id": "C8996",
+          "name": "Cordro Anlolo",
+          "email": "cordro.anlolo@example.com",
+          "address": {
+            "city": "Ananan City",
+            "zip": "40875"
+          },
+          "phone": null,
+          "loyalty": {
+            "tier": "silver",
+            "points": 758
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-590",
+            "qty": 2,
+            "price": 62.93,
+            "tags": [
+              "fragile",
+              "gift"
+            ]
+          },
+          {
+            "sku": "SKU-405",
+            "qty": 1,
+            "price": 84.15,
+            "tags": [
+              "fragile",
+              "promo"
+            ]
+          }
+        ],
+        "total": 210.01
+      },
+      {
+        "order_id": 7,
+        "created_at": "2026-11-03T10:00:00Z",
+        "status": "paid",
+        "customer": {
+          "id": "C4275",
+          "name": "Tenten Sellunten",
+          "email": "tenten.sellunten@example.com",
+          "address": {
+            "city": "Briandro City",
+            "zip": "95814"
+          },
+          "phone": null,
+          "loyalty": {
+            "tier": "silver",
+            "points": 483
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-298",
+            "qty": 3,
+            "price": 54.77
+          },
+          {
+            "sku": "SKU-473",
+            "qty": 1,
+            "price": 28.01,
+            "tags": [
+              "promo"
+            ],
+            "discounts": [
+              {
+                "code": "ANETH",
+                "amount": 3.75
+              }
+            ]
+          }
+        ],
+        "total": 192.32
+      },
+      {
+        "order_id": 8,
+        "created_at": "2026-10-27T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C2421",
+          "name": "Anmir Selethdro",
+          "email": "anmir.selethdro@example.com",
+          "address": {
+            "city": "Lunselan City",
+            "zip": "52610"
+          },
+          "loyalty": {
+            "tier": "gold",
+            "points": 174
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-128",
+            "qty": 2,
+            "price": 71.72
+          }
+        ],
+        "total": 143.44
+      },
+      {
+        "order_id": 9,
+        "created_at": "2026-09-05T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C2683",
+          "name": "Mirka Kaluneth",
+          "email": "mirka.kaluneth@example.com",
+          "address": {
+            "city": "Brilunmir City",
+            "zip": "56860"
+          },
+          "loyalty": {
+            "tier": "gold",
+            "points": 28
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-317",
+            "qty": 3,
+            "price": 61.14
+          },
+          {
+            "sku": "SKU-657",
+            "qty": 4,
+            "price": 100.44,
+            "tags": [
+              "bulk",
+              "rush"
+            ]
+          }
+        ],
+        "total": 585.18,
+        "notes": null
+      },
+      {
+        "order_id": 10,
+        "created_at": "2026-04-14T10:00:00Z",
+        "status": "paid",
+        "customer": {
+          "id": "C8757",
+          "name": "Corka Mirmirmir",
+          "email": "corka.mirmirmir@example.com",
+          "address": {
+            "city": "Corlunlo City",
+            "zip": "72938"
+          },
+          "phone": null
+        },
+        "items": [
+          {
+            "sku": "SKU-668",
+            "qty": 4,
+            "price": 94.54,
+            "tags": [],
+            "discounts": [
+              {
+                "code": "KALO",
+                "amount": 5.06
+              },
+              {
+                "code": "BRIKA",
+                "amount": 7.08
+              }
+            ]
+          },
+          {
+            "sku": "SKU-164",
+            "qty": 4,
+            "price": 40.42
+          },
+          {
+            "sku": "SKU-304",
+            "qty": 3,
+            "price": 55.38
+          },
+          {
+            "sku": "SKU-353",
+            "qty": 3,
+            "price": 110.89,
+            "discounts": [
+              {
+                "code": "MIRSEL",
+                "amount": 1.97
+              },
+              {
+                "code": "ANDRO",
+                "amount": 1.58
+              }
+            ]
+          }
+        ],
+        "total": 1038.65,
+        "payments": [
+          {
+            "method": "wallet",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "order_id": 11,
+        "created_at": "2026-02-04T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C5146",
+          "name": "Luneth Ethdromir",
+          "email": "luneth.ethdromir@example.com",
+          "address": {
+            "city": "Miranten City",
+            "zip": "97869"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-266",
+            "qty": 2,
+            "price": 21.05
+          },
+          {
+            "sku": "SKU-447",
+            "qty": 4,
+            "price": 25.1,
+            "tags": [
+              "gift",
+              "promo"
+            ]
+          },
+          {
+            "sku": "SKU-551",
+            "qty": 1,
+            "price": 47.35
+          }
+        ],
+        "total": 189.85,
+        "notes": "=call first"
+      },
+      {
+        "order_id": 12,
+        "created_at": "2026-05-02T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C5237",
+          "name": "Mirva Mirseleth",
+          "email": "mirva.mirseleth@example.com",
+          "address": {
+            "city": "Selmirbri City",
+            "zip": "67473"
+          }
+        },
+        "items": [],
+        "total": 0,
+        "notes": "leave at door"
+      },
+      {
+        "order_id": 13,
+        "created_at": "2026-09-22T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C5332",
+          "name": "Valo Cortenlo",
+          "email": "valo.cortenlo@example.com",
+          "address": {
+            "city": "Loanka City",
+            "zip": "44453"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-736",
+            "qty": 2,
+            "price": 7.1
+          },
+          {
+            "sku": "SKU-265",
+            "qty": 3,
+            "price": 7.94,
+            "tags": [
+              "promo",
+              "fragile"
+            ]
+          }
+        ],
+        "total": 38.02,
+        "payments": [
+          {
+            "method": "card",
+            "ok": false
+          }
+        ],
+        "notes": "leave at door"
+      },
+      {
+        "order_id": 14,
+        "created_at": "2026-01-03T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C8324",
+          "name": "Briten Brianten",
+          "email": "briten.brianten@example.com",
+          "address": {
+            "city": "Loetheth City",
+            "zip": "56646"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-618",
+            "qty": 3,
+            "price": 83.15
+          },
+          {
+            "sku": "SKU-952",
+            "qty": 2,
+            "price": 49.75,
+            "tags": []
+          },
+          {
+            "sku": "SKU-114",
+            "qty": 1,
+            "price": 75.8
+          }
+        ],
+        "total": 424.75
+      },
+      {
+        "order_id": 15,
+        "created_at": "2026-05-24T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C4036",
+          "name": "Tenlun Vakaan",
+          "email": "tenlun.vakaan@example.com",
+          "address": {
+            "city": "Mirvaan City",
+            "zip": "00474"
+          },
+          "phone": null
+        },
+        "items": [
+          {
+            "sku": "SKU-431",
+            "qty": 2,
+            "price": 6.06,
+            "discounts": [
+              {
+                "code": "KADRO",
+                "amount": 4.05
+              }
+            ]
+          },
+          {
+            "sku": "SKU-586",
+            "qty": 3,
+            "price": 61.33,
+            "tags": [],
+            "discounts": [
+              {
+                "code": "MIRSEL",
+                "amount": 5.69
+              }
+            ]
+          },
+          {
+            "sku": "SKU-503",
+            "qty": 1,
+            "price": 37.36,
+            "discounts": [
+              {
+                "code": "ETHLUN",
+                "amount": 7.27
+              }
+            ]
+          },
+          {
+            "sku": "SKU-710",
+            "qty": 4,
+            "price": 92.19
+          }
+        ],
+        "total": 602.23,
+        "payments": [
+          {
+            "method": "wallet",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "order_id": 16,
+        "created_at": "2026-08-16T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C4767",
+          "name": "Bribri Corkaeth",
+          "email": "bribri.corkaeth@example.com",
+          "address": {
+            "city": "Lokaka City",
+            "zip": "17444"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-955",
+            "qty": 4,
+            "price": 67.91
+          },
+          {
+            "sku": "SKU-797",
+            "qty": 2,
+            "price": 59.74,
+            "tags": []
+          },
+          {
+            "sku": "SKU-615",
+            "qty": 1,
+            "price": 79.8,
+            "tags": [
+              "promo",
+              "gift",
+              "fragile"
+            ],
+            "discounts": [
+              {
+                "code": "TENLUN",
+                "amount": 6.2
+              }
+            ]
+          }
+        ],
+        "total": 470.92,
+        "payments": [
+          {
+            "method": "wallet",
+            "ok": true
+          }
+        ]
+      },
+      {
+        "order_id": 17,
+        "created_at": "2026-05-09T10:00:00Z",
+        "status": "shipped",
+        "customer": {
+          "id": "C5987",
+          "name": "Locor Mirdrova",
+          "email": "locor.mirdrova@example.com",
+          "address": {
+            "city": "Corcormir City",
+            "zip": "01634"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-201",
+            "qty": 2,
+            "price": 81.73,
+            "tags": [
+              "bulk",
+              "rush"
+            ]
+          },
+          {
+            "sku": "SKU-221",
+            "qty": 2,
+            "price": 38.78,
+            "tags": [
+              "gift",
+              "promo",
+              "fragile"
+            ],
+            "discounts": [
+              {
+                "code": "VASEL",
+                "amount": 2.68
+              },
+              {
+                "code": "TENLO",
+                "amount": 5.65
+              }
+            ]
+          },
+          {
+            "sku": "SKU-245",
+            "qty": 3,
+            "price": 114.42,
+            "tags": [
+              "gift",
+              "promo"
+            ],
+            "discounts": [
+              {
+                "code": "SELKA",
+                "amount": 2.27
+              },
+              {
+                "code": "ANETH",
+                "amount": 4.61
+              }
+            ]
+          },
+          {
+            "sku": "SKU-409",
+            "qty": 2,
+            "price": 51.11,
+            "tags": []
+          },
+          {
+            "sku": "SKU-101",
+            "qty": 3,
+            "price": 90.59,
+            "discounts": [
+              {
+                "code": "LUNKA",
+                "amount": 8.21
+              }
+            ]
+          }
+        ],
+        "total": 958.27,
+        "payments": [
+          {
+            "method": "wallet",
+            "ok": false
+          }
+        ]
+      },
+      {
+        "order_id": 18,
+        "created_at": "2026-09-05T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C1845",
+          "name": "Selva Kavalo",
+          "email": "selva.kavalo@example.com",
+          "address": {
+            "city": "Ethvaeth City",
+            "zip": "19518"
+          },
+          "phone": null
+        },
+        "items": [
+          {
+            "sku": "SKU-423",
+            "qty": 2,
+            "price": 93.24
+          },
+          {
+            "sku": "SKU-129",
+            "qty": 4,
+            "price": 109.78
+          },
+          {
+            "sku": "SKU-836",
+            "qty": 1,
+            "price": 7.84
+          },
+          {
+            "sku": "SKU-870",
+            "qty": 2,
+            "price": 78.05,
+            "tags": []
+          }
+        ],
+        "total": 789.54
+      },
+      {
+        "order_id": 19,
+        "created_at": "2026-08-14T10:00:00Z",
+        "status": "pending",
+        "customer": {
+          "id": "C4910",
+          "name": "Lunlun Ethvasel",
+          "email": "lunlun.ethvasel@example.com",
+          "address": {
+            "city": "Vaanbri City",
+            "zip": "87670"
+          },
+          "loyalty": {
+            "tier": "gold",
+            "points": 76
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-612",
+            "qty": 4,
+            "price": 66.95
+          }
+        ],
+        "total": 267.8
+      },
+      {
+        "order_id": 20,
+        "created_at": "2026-12-23T10:00:00Z",
+        "status": "refunded",
+        "customer": {
+          "id": "C5232",
+          "name": "Brilo Drotendro",
+          "email": "brilo.drotendro@example.com",
+          "address": {
+            "city": "Cortenka City",
+            "zip": "98259"
+          }
+        },
+        "items": [
+          {
+            "sku": "SKU-636",
+            "qty": 2,
+            "price": 46.47,
+            "tags": []
+          },
+          {
+            "sku": "SKU-688",
+            "qty": 3,
+            "price": 16.85
+          },
+          {
+            "sku": "SKU-983",
+            "qty": 2,
+            "price": 12.93
+          },
+          {
+            "sku": "SKU-761",
+            "qty": 4,
+            "price": 52.96,
+            "tags": [],
+            "discounts": [
+              {
+                "code": "LUNAN",
+                "amount": 8.75
+              },
+              {
+                "code": "ANKA",
+                "amount": 1.59
+              }
+            ]
+          },
+          {
+            "sku": "SKU-945",
+            "qty": 4,
+            "price": 116.72,
+            "tags": [],
+            "discounts": [
+              {
+                "code": "BRIETH",
+                "amount": 1.87
+              }
+            ]
+          }
+        ],
+        "total": 848.07,
+        "payments": [
+          {
+            "method": "card",
+            "ok": true
+          }
+        ],
+        "notes": "leave at door"
+      }
+    ]
+  },
+  "meta": {
+    "page": 1
+  }
+}

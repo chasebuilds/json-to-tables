@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-to-tables"
+version = "0.1.0"
+description = "Nested JSON and JSON Lines to tidy related tables in Excel, CSV or SQLite, with parent keys and a schema sheet."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Chase Builds" }]
+dependencies = ["openpyxl>=3.1"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "pytest-cov>=5", "ruff>=0.6", "mypy>=1.10"]
+
+[project.scripts]
+j2t = "json_to_tables.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+
+[tool.coverage.run]
+source = ["json_to_tables"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+src = ["src", "tests", "benchmark"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["json_to_tables", "benchmark"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src"]
+strict = true
+
+[[tool.mypy.overrides]]
+module = ["openpyxl.*"]
+ignore_missing_imports = true

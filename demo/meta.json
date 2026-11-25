@@ -1,0 +1,7 @@
+{
+  "title": "JSON to Tables: Flatten nested JSON into related tables | Chase Builds",
+  "description": "Turn nested JSON and JSON Lines into tidy related tables in Excel, CSV or SQLite, with parent keys and a schema sheet. Runs in your browser, nothing uploaded.",
+  "url": "https://chasebuilds.github.io/json-to-tables/",
+  "image": "docs/demo.png",
+  "repo": "json-to-tables"
+}

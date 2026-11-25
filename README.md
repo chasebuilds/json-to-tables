@@ -2,6 +2,10 @@
 
 [![ci](https://github.com/chasebuilds/json-to-tables/actions/workflows/ci.yml/badge.svg)](https://github.com/chasebuilds/json-to-tables/actions/workflows/ci.yml) ![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue) [![MIT license](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
+**[Live demo: try it in your browser](https://chasebuilds.github.io/json-to-tables/)**. Drop in your own file or run the bundled sample with one click. The real package runs in the page with Pyodide, so files never leave your browser.
+
+[![The live demo after running the sample: the tool's summary, result tabs and output table](docs/demo.png)](https://chasebuilds.github.io/json-to-tables/)
+
 Turns nested JSON or JSON Lines (API exports, webhook dumps) into tidy related tables. Each list inside a record gets its own table with keys back to its parent row. Nested objects become dotted columns (`customer.address.city`). Every row in a table has the same columns, even when records have different keys. Numbers stay numbers and true/false stays true/false. Output is an Excel workbook (one sheet per table plus a Schema sheet), a folder of CSV files, or a SQLite database. Everything runs offline.
 
 ## Measured result
